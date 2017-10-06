@@ -1,0 +1,276 @@
+/*universal*/
+
+html{
+  font-family:helvetica;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+/*navigation bar*/
+
+nav{
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  top: 1rem;
+}
+.logo img{
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+ul{
+  display: flex;
+}
+li{
+  margin-right: 2rem;
+  color: white;
+}
+.mobilenav{
+  display: none;
+}
+.container{
+  width:960px;
+  margin: 0 auto;
+}
+
+
+/*banner*/
+.banner{
+  background-image: url("../images/glasses-bg.png");
+  height: 31rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flex{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10rem;
+}
+
+h1{
+  font-size: 2rem;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  position: relative;
+  left: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/*features*/
+
+.features{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.service img{
+  width:5rem;
+}
+.one img{
+  width:3.5rem;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
+  height: 8rem;
+  margin: 0 3rem;
+  width: 5rem;
+  text-align: center;
+  line-height:1.4;
+}
+
+/*content*/
+
+.content{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.content h2{
+  background-color: cadetblue;
+  padding-left: 1.25rem;
+  width: 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.vision{
+  margin-right: 5%;
+  width: 35%;
+}
+
+.contact{
+  margin-left: 5%;
+  width: 35%;
+}
+
+.content p{
+  margin-top: 1rem;
+}
+
+/*footer*/
+
+.footer{
+  display: flex;
+  background-color: azure;
+  margin-top: 5rem;
+  padding: 4rem 4rem;
+  align-items: center;
+}
+
+.footer img{
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+
+/* responsive site css */
+
+/*mid screen device*/
+
+/*nav*/
+
+@media only screen and (max-width: 980px){
+nav{
+  top: 0;
+}
+
+.container{
+  width: 100%;
+}
+
+/*banner*/
+
+.banner{
+  height: 22rem;
+  background-position: 20%;
+}
+
+.flex{
+  margin-top: 6rem;
+}
+
+h1{
+  font-size: 1.33rem;
+  padding: 0.75rem 4rem;
+  left: -2rem;
+}
+
+/*small screen device*/
+/*nav*/
+
+@media only screen and (max-width: 633px){
+  .desktopnav{
+  display: none;
+  }
+
+ .logo h3{
+    display: none;
+  }
+
+  .mobilenav{
+  display: block;
+  }
+
+/*banner*/
+
+ .banner{
+  height: 17rem;
+ }
+
+ .flex{
+  justify-content: center;
+  margin-top: 9rem;
+  background-color: white;
+ }
+
+ h1{
+  font-size: 1rem;
+  padding: 1rem 0;
+  left: 0;
+ }
+
+/*features*/
+
+.features{
+  flex-direction: column;
+  margin-top: 3.77rem;
+  margin-bottom: 0;
+}
+
+.service{
+  font-size: 0.77rem;
+  margin-bottom: 1.54rem;
+  height:auto;
+}
+
+.service img{
+  margin-bottom: .5rem;
+}
+
+/*content*/
+
+.content{
+  flex-direction: column;
+}
+
+.contact, .vision{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content h2{
+  width: auto;
+}
+
+.contact{
+  margin-top: 4rem;
+}
+
+.content p{
+  font-size: 0.77rem;
+  font-family: helvatica;
+}
+
+/*footer*/
+
+.footer p{
+   display: none;
+}
+
+.footer{
+  justify-content: center;
+  padding: 0 0;
+}
+
+.footer img{
+  margin: 4rem 0;
+}
+}
